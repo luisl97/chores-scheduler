@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "title": "Clean Kitchen Countertops",
+    "energyLevel": 3,
+    "repetitions": 1
+  },
+  {
+    "id": 1,
+    "title": "Vacuum/Sweep Kitchen Floor",
+    "energyLevel": 4
+  },
+  {
+    "id": 2,
+    "title": "Unload Dishwasher",
+    "energyLevel": 2,
+    "repetitions": 1
+  },
+  {
+    "id": 3,
+    "title": "Put things in Their Place",
+    "energyLevel": 2,
+    "repetitions": 1
+  },
+  {
+    "id": 4,
+    "title": "Take out Trash",
+    "energyLevel": 4,
+    "repetitions": 1
+  },
+  {
+    "id": 5,
+    "title": "Wash and Replace Bedsheets",
+    "energyLevel": 3,
+    "repetitions": 1
+  },
+  {
+    "id": 6,
+    "title": "Vacuum Living Room",
+    "energyLevel": 4,
+    "repetitions": 1
+  }
+]

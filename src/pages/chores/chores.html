@@ -1,0 +1,46 @@
+<!--
+  Generated template for the ChoresPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>chores</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-left (click)="addChore()">
+        <ion-icon name="add"></ion-icon>Add Chore </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-item-divider *ngIf='addedChores.length > 0'>
+        Assigned
+      </ion-item-divider>
+      <ion-item-sliding *ngFor="let chore of addedChores">
+      <ion-item (click)="goChoreDetails(chore)" detail-push>
+        <h2>{{chore.title}}</h2>
+        <p>{{chore.person}}</p>
+       </ion-item>
+       <ion-item-options side="right">
+         <button ion-button icon-only (click)="removeChore(chore)" color="danger">
+           <ion-icon name="trash"></ion-icon>
+         </button>
+       </ion-item-options>
+     </ion-item-sliding>
+    </ion-list>
+    <ion-list>
+      <ion-item-divider>
+        Suggested
+      </ion-item-divider>
+        <ion-item *ngFor="let chore of chores" (click)='addChore(chore)' detail-push ion-icon name='checkmark'>
+          <ion-icon name="checkmark" item-left></ion-icon>
+          <h2>{{chore.title}}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>

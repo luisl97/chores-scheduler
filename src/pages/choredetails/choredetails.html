@@ -1,0 +1,37 @@
+<!--
+  Generated template for the ChoredetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>choredetails</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 padding>{{this.chore.title}}</h1>
+  <ion-card>
+    <ion-card-header>
+      Chore Details
+    </ion-card-header>
+    <ion-list>
+        <button ion-button clear icon-left (click)="changePerson()">
+          Performed by: {{this.chore.person}}
+          <ion-icon padding-left name="create"></ion-icon>
+        </button>
+        <button ion-button clear icon-left (click)="changeEnergylvl()">
+          Energy Level: {{this.chore.energyLevel}} (1-5)
+          <ion-icon padding-left name="create"></ion-icon>
+        </button>
+        <button ion-button clear icon-left (click)="changeRepetitions()">
+          Times per week: {{this.chore.repetitions}}
+          <ion-icon padding-left name="create"></ion-icon>
+        </button>
+    </ion-list>
+  </ion-card>
+</ion-content>
